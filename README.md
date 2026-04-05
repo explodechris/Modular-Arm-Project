@@ -8,5 +8,6 @@ Modular 3-DOF modules using a parallel kinematic mechanism (pitch, yaw, and exte
 --- Progress ---\
 • Proof-of-concept prototype built.\
 • Designed for manufacturing around SLS and SLA-specific constraints: thermal bleed, over-sintering on unsupported geometry, and fluid-wash tolerances.\
-• Custom motor driver PCB: 10×15mm, DRV8871 IC, distributed power architecture. Trace widths calculated for peak stall current, thermal dissipation, and bulk capacitance engineered within 1/4 the size of the commercially available equivalent. Full PCB design and PCBA.\
+• Traded off over-constrained PKM design for structural stability and manufacturability.\
+• Custom motor driver PCB: 10×15mm, DRV8871 IC, distributed power architecture, stacked board design. Trace widths calculated for peak stall current, thermal dissipation through thermal vias, and bulk capacitance engineered within 1/2 the size of the commercially available equivalent. Full PCB design and PCBA.\
 • Interfaces with ESP32 and MPU6050 IMU for closed-loop position control (firmware in progress).
